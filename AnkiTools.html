@@ -6,10 +6,11 @@
         <script type="text/javascript" src="AnkiTools.js"></script>
         <script>
             // Test code to make sure the CSV is working
-            card1 = new Card("hi, hello!", '"""test"""');
-            card2 = new Card("hjaiihi", "hello wlrd!");
-            deck = new Deck("name", [card1, card2]);
-            console.log(deck.genCSV());
+            let card1 = new Card("hi, hello!", '"""test"""');
+            let card2 = new Card("hjaiihi", "hello wlrd!");
+            let deck = new Deck("name", [card1, card2]);
+            let csv = deck.genCSV();
+            let csvURI = encodeURIComponent(csv);
         </script>
     </head>
     <body>
