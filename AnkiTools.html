@@ -14,6 +14,18 @@
         </script>
     </head>
     <body>
+        <!-- Used for testing capabilities, will move to react eventually -->
+        <a id="a" href="" download="" >
+            <button>Download</button>
+        </a>
 
+        <script type="text/javascript">
+            // Convert CSV into data URL
+            csvURL = "data:text/csv," + csvURI;
+            // Get a element
+            let a = document.getElementById("a");
+            // Set it to the data url
+            a.href = csvURL;
+        </script>
     </body>
 </html>
